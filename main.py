@@ -2,11 +2,13 @@ from flask import Flask, render_template, redirect, url_for, request, jsonify, f
 from flask_ckeditor import CKEditor
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
+from flask_bootstrap import Bootstrap
 from wtforms.validators import DataRequired, Email, email_validator
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
+
 
 class ContactForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
@@ -22,7 +24,8 @@ ckeditor = CKEditor(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    form = ContactForm(request.form)
+    return render_template('index.html', form=form)
 
 
 if __name__ == "__main__":
