@@ -50,6 +50,8 @@ def home():
                                         f"Email: {email}\n\n"
                                         f"Message: {message}")
 
+            flash('Message successfully sent.')
+
     return render_template('index.html')
 
 
