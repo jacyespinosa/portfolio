@@ -107,19 +107,23 @@
 
       <form method="POST" style="margin-left: 25%; margin-right: 25%;">
         <div class="form-outline mb-4">
-          <input type="text" class="form-control" name="name"/>
-          <label class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" placeholder="Enter Name"/>
+          <label class="form-label" style="font-weight: bold;">Name</label>
         </div>
 
         <div class="form-outline mb-4">
-          <input type="text" class="form-control" name="email" />
-          <label class="form-label">Email</label>
+          <input type="text" class="form-control" name="email" placeholder="Enter Email Address"/>
+          <label class="form-label" style="font-weight: bold;">Email</label>
         </div>
 
         <div class="form-outline mb-4">
-          <input type="text" class="form-control form-control-lg" name="message"/>
-          <label class="form-label">Message</label>
+          <textarea type="text" class="form-control form-control-lg" name="message" style="font-size: 1rem;font-weight: 400;" wrap="hard"></textarea>
+          <label class="form-label" style="font-weight: bold;">Message</label>
         </div>
+        <div class="d-flex justify-content-center">
+          <input class="btn btn-primary" type="submit" href="{{url_for('home')}}" style="margin-left: 50%;" value="Send"/>
+        </div>
+
 
 
       </form>
