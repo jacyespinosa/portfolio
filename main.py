@@ -47,7 +47,7 @@ def home():
                                     to_addrs=TO_ADDRESS,
                                     msg=f"Subject: You have a message!\n\n"
                                         f"Name: {name}\n"
-                                        f"Email: {email}\n"
+                                        f"Email: {email}\n\n"
                                         f"Message: {message}")
 
     return render_template('index.html')

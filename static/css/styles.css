@@ -458,3 +458,30 @@ textarea.form-control-lg {
 .form-control-color::-webkit-color-swatch {
   height: 1.5em;
 }
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+
+.send-button {
+  background-color: white;
+  color: black;
+  border: 2px solid navy;
+}
+
+.send-button:hover {
+  background-color: #232ffb;
+  color: white;
+}

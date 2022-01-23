@@ -121,8 +121,9 @@
           <label class="form-label" style="font-weight: bold;">Message</label>
         </div>
         <div class="d-flex justify-content-center">
-          <input class="btn btn-primary" type="submit" href="{{url_for('home')}}" style="margin-left: 50%;" value="Send"/>
+          <input class="button send-button" type="submit" href="{{url_for('home')}}" value="Send"/>
         </div>
+        <div style="color: red"> {% with messages = get_flashed_messages() %} {{ messages[0] }} {% endwith %}</div>
 
 
 
