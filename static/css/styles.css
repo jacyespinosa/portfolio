@@ -6,7 +6,6 @@ body {
 .container{
   background-color: #1F2937;
   color: white;
-  padding-bottom: 100px;
 }
 
 .flex-container{
@@ -201,10 +200,11 @@ button{
 }
 
 .footer{
-  padding: 25px 300px;
   background-color: #1F2937;
   color: white;
   text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .form-floating {
