@@ -130,7 +130,6 @@ body {
 } */
 
 .project-section{
-  padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
   display: flex;
@@ -478,6 +477,7 @@ textarea.form-control-lg {
 .d-flex{
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .d-flex.justify-content-center{
