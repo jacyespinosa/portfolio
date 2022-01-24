@@ -50,14 +50,6 @@ body {
 }
 
 
-button{
-  background: #3882F6;
-  border-radius: 4px solid blue;
-  height: 35px;
-  width: 115px;
-  color: white;
-}
-
 .info-container{
   padding: 25px 300px;
   background-color: white;
@@ -471,7 +463,46 @@ textarea.form-control-lg {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-left: 40%;
+}
+
+.button.project-button{
+  background: var(--project);
+  color: black;
+  border: 2px solid navy;"
+}
+
+.button.project-button:hover{
+  background-color: #003366;
+  color: white;
+}
+.d-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex.justify-content-center{
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.d-flex button .project-button{
+    background: var(--project);;
+    border: 2px solid navy;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 15%;
+}
+
+.d-flex button .project-button:hover {
+  background-color: #003366;
+  color: white;
 }
 
 
@@ -482,6 +513,6 @@ textarea.form-control-lg {
 }
 
 .send-button:hover {
-  background-color: #232ffb;
+  background-color: #003366;
   color: white;
 }
