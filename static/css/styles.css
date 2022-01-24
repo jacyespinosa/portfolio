@@ -483,7 +483,6 @@ textarea.form-control-lg {
 .d-flex.justify-content-center{
   display: flex;
   justify-content: center;
-  margin-right: 10%;
 }
 
 .d-flex button .project-button{
