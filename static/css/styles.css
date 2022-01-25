@@ -1,7 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0px;
 }
+
 
 .container{
   background-color: #1F2937;
@@ -66,7 +70,7 @@ body {
 .about-context{
   font-size: 20px;
   color: black;
-  text-align: center;
+  text-align: left;
 }
 
 .flex-info-container{
