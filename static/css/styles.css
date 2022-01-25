@@ -164,10 +164,11 @@ body {
     border: 1px solid black;
 }
 
-.text-project h2{
+.text-project h2 a{
   margin-top: 0;
   padding-left: 3px;
   color: black;
+  text-decoration: none;
 }
 
 .text-project p{
