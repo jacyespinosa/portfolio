@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0px;
+
 }
 
 
@@ -15,6 +16,7 @@ body {
 .flex-container{
   padding: 25px 300px;
   display: flex;
+  font-family: 'Merriweather', serif;
 }
 
 .flex-container .header-logo {
@@ -48,12 +50,15 @@ body {
 }
 
 .website-awesome{
+  font-family: 'Merriweather', serif;
   font-size: 48px;
   color: #F9FAF8;
   margin-bottom: 0px;
 }
 
-
+.context-item p {
+  font-family: 'Merriweather', serif;
+}
 .info-container{
   padding: 25px 300px;
   background-color: white;
