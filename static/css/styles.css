@@ -20,6 +20,7 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+
 .flex-container .header-logo {
   flex: 4;
   font-size: 30px;
@@ -33,9 +34,42 @@ body {
   text-align: center;
 }
 
+
+.header,
+.header:after,
+.header:before {
+  transition: all .5s;
+}
+
+.header:hover {
+  color: white;
+}
+
+/* stroke */
+nav.flex-container a{
+  position: relative;
+}
+.header:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+.header:hover:after {
+  width: 50%;
+}
+
+
 .header .one{
   margin-left: auto;
 }
+
 
 .web-context{
   padding-top: 100px;
@@ -157,7 +191,7 @@ body {
 .visual-project img {
   max-width: 100%;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid #1b2738;
 }
 
 .text-project-container{
@@ -167,7 +201,7 @@ body {
     height: 300px;
     width: 60%;
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1px solid #1b2738;
 }
 
 .text-project h2 a{
@@ -478,7 +512,7 @@ textarea.form-control-lg {
 .button.project-button{
   background: var(--project);
   color: black;
-  border: 2px solid navy;"
+  border: 2px solid #1b2738;"
 }
 
 .button.project-button:hover{
@@ -519,7 +553,7 @@ textarea.form-control-lg {
 .send-button {
   background-color: white;
   color: black;
-  border: 2px solid navy;
+  border: 2px solid #1b2738;
 }
 
 .send-button:hover {
