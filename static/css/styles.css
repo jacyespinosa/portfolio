@@ -24,6 +24,7 @@ body {
 .flex-container .header-logo {
   flex: 4;
   font-size: 30px;
+  font-weight: bold;
   color: #F9FAF8;
 }
 
@@ -215,6 +216,37 @@ nav.flex-container a{
   padding-left: 3px;
   color: black;
 }
+
+.project-title,
+.project-title:after,
+.project-title:before {
+  transition: all .5s;
+}
+
+.project-title:hover {
+  color: black;
+}
+
+/* stroke */
+div.text-project-container .text-project h2 a{
+  position: relative;
+}
+.project-title:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+.project-title:hover:after {
+  width: 100%;
+}
+
 
 .contact-container{
   padding: 25px 300px;
