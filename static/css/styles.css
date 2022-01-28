@@ -18,6 +18,7 @@ body {
   padding: 25px 300px;
   display: flex;
   font-family: 'Merriweather', serif;
+  flex-wrap: wrap;
 }
 
 
@@ -74,6 +75,7 @@ nav.flex-container a{
 
 .web-context{
   padding-top: 100px;
+  flex-wrap: wrap;
 }
 
 
@@ -95,10 +97,32 @@ nav.flex-container a{
 .context-item p {
   font-family: 'Merriweather', serif;
 }
+
+.context-container{
+  flex-wrap: wrap;
+}
 .info-container{
   padding: 25px 300px;
   background-color: white;
   padding-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.flex-info-container{
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-info-container{
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+
+  .flex-container .box img{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 .info .about-me-title {
@@ -120,13 +144,14 @@ nav.flex-container a{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 25px;
 }
 
 .box {
   width: 120px;
   height: 120px;
-
+  flex-wrap: wrap;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -157,6 +182,7 @@ nav.flex-container a{
   justify-content: center;
   background-color: #E5E7EB;
   flex-wrap: wrap;
+  flex-direction:row;
 }
 
 .project .project-title{
@@ -166,13 +192,20 @@ nav.flex-container a{
   text-align: center;
 }
 
-/* .project p{
-  flex: 1;
-  font: 36px lightc;
-  font-style: italic;
-  text-align: center;
-  color: #1F2937;
-} */
+@media only screen and (max-width: 600px) {
+  .project-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project-container.visual-project{
+    width: 300px;
+    height: 500px;
+  }
+  .project-container.text-project{
+    width: 300px;
+    height: 500px;
+  }
+}
 
 .project-section{
   padding-bottom: 40px;
