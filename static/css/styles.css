@@ -21,7 +21,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .flex-container .header-logo {
   flex: 4;
   font-size: 30px;
@@ -34,6 +33,13 @@ body {
   color: #E5E7EB;
   flex: 1;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container .header{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 
@@ -104,7 +110,6 @@ nav.flex-container a{
 .info-container{
   padding: 25px 300px;
   background-color: white;
-  padding-bottom: 100px;
   flex-wrap: wrap;
 }
 
@@ -178,11 +183,8 @@ nav.flex-container a{
 
 .project-container{
   padding: 25px 300px;
-  display: flex;
   justify-content: center;
   background-color: #E5E7EB;
-  flex-wrap: wrap;
-  flex-direction:row;
 }
 
 .project .project-title{
@@ -192,18 +194,28 @@ nav.flex-container a{
   text-align: center;
 }
 
+.title-project{
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  text-align: center;
+}
+
+.project-section{
+  display: flex;
+}
+
+.visual-project{
+  flex: 100;
+}
+
+.text-project{
+  flex: 100;
+}
+
 @media only screen and (max-width: 600px) {
-  .project-container{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .project-container.visual-project{
-    width: 300px;
-    height: 500px;
-  }
-  .project-container.text-project{
-    width: 300px;
-    height: 500px;
+  .visual-project, .text-project{
+    flex: 100;
   }
 }
 
