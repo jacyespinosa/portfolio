@@ -39,6 +39,11 @@ body {
   .flex-container .header{
     flex-direction: column;
     flex-wrap: wrap;
+
+  }
+  .flex-container{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
