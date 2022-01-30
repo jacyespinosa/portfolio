@@ -233,7 +233,7 @@ nav.flex-container a{
 }
 
 .visual-project{
-  width: 533.33px!important;
+  width: 50%;
   height: 300px!important;
   margin-top: 20px;
 
@@ -250,9 +250,10 @@ nav.flex-container a{
     align-items: center;
     background: var(--project);
     height: 300px;
-    width: 60%;
+    width: 50%;
     margin-top: 20px;
     border: 1px solid #1b2738;
+    padding: 0 10px ;
 }
 
 .text-project h2 a{
