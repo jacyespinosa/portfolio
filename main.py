@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, flash
+from flask import Flask, render_template, redirect, url_for, request, flash, send_file
 from flask_ckeditor import CKEditor
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
@@ -8,6 +8,9 @@ import smtplib
 import os
 
 load_dotenv()
+
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = 'logs'
 
 
 class ContactForm(FlaskForm):
@@ -53,6 +56,12 @@ def home():
             flash('Message successfully sent.')
 
     return render_template('index.html')
+
+
+@app.route('/download', methods=['GET', 'POST'])
+def download_file():
+    path = "JacyMaeEspinosa.pdf"
+    return send_file(path, as_attachment=True)
 
 
 if __name__ == "__main__":

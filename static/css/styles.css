@@ -218,10 +218,11 @@ nav.flex-container a{
   flex: 100;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (width: 600px) {
   .visual-project, .text-project{
-    flex: 100;
+    flex: 100%;
   }
+
 }
 
 .project-section{
