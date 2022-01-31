@@ -37,11 +37,10 @@ body {
 
 @media only screen and (max-width: 600px) {
   .flex-container .header{
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .flex-container{
+  .container .flex-container{
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -210,19 +209,17 @@ nav.flex-container a{
   display: flex;
 }
 
-.visual-project{
-  flex: 100;
-}
 
 .text-project{
   flex: 100;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-@media only screen and (width: 600px) {
+@media only screen and (max-width: 600px) {
   .visual-project, .text-project{
-    flex: 100%;
+    flex: 100;
   }
-
 }
 
 .project-section{
@@ -234,7 +231,7 @@ nav.flex-container a{
 }
 
 .visual-project{
-  width: 50%;
+  width: 533.33px!important;
   height: 300px!important;
   margin-top: 20px;
 
@@ -254,7 +251,6 @@ nav.flex-container a{
     width: 50%;
     margin-top: 20px;
     border: 1px solid #1b2738;
-    padding: 0 10px ;
 }
 
 .text-project h2 a{
